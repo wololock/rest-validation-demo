@@ -17,7 +17,9 @@ import java.util.List;
 
 @Validated
 @RestController
-public class EmployeeController {
+// implementing EmployeeContract interface makes mapping for /history endpoint
+// not show up after running application.
+public class EmployeeController implements EmployeeContract {
 
     private final List<Employee> employees;
 
